@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "skills": {
+    "tlc-spec-driven": {
+      "name": "tlc-spec-driven",
+      "source": "local",
+      "contentHash": "79d0e1b750dfc70820ac0152d9ca78927c398f669397e9cdb8bb812ceca2fbc6",
+      "installedAt": "2026-03-02T01:45:16.587Z",
+      "updatedAt": "2026-03-02T01:45:16.607Z",
+      "agents": [
+        "windsurf"
+      ],
+      "method": "copy",
+      "global": false
+    },
+    "technical-design-doc-creator": {
+      "name": "technical-design-doc-creator",
+      "source": "local",
+      "contentHash": "d05974df076f695f96b4e4c263ad19f2aaffe8ee6248c1b07a634dd9ed0ea51e",
+      "installedAt": "2026-03-02T01:46:00.291Z",
+      "updatedAt": "2026-03-02T01:46:00.293Z",
+      "agents": [
+        "claude-code"
+      ],
+      "method": "copy",
+      "global": false
+    }
+  }
+}
