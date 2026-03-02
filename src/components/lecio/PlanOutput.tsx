@@ -9,25 +9,25 @@ const PlanOutput = ({ plan }: PlanOutputProps) => {
   return (
     <section className="flex flex-col gap-4">
       <SectionCard
-        title="Fundamentação Acadêmica"
+        title="Fundamentação Teórica e BNCC"
         content={plan.foundation}
         defaultOpen
       />
       <SectionCard
-        title="Contexto Rápido para o Professor"
+        title="Domínio do Conteúdo"
         content={plan.teacherContext}
       />
       <SectionCard
-        title="Como Explicar para a Turma"
+        title="Tradução para o aluno"
         content={plan.studentExplanation}
       />
       <SectionCard
-        title="Pontos de Confusão Comuns"
+        title="Obstáculos de Aprendizagem"
         content={plan.commonMistakes}
       />
-      <SectionCard title="Roteiro de Aula (50 minutos)" content={plan.lessonScript} />
+      <SectionCard title="Sequência Didática (50 min)" content={plan.lessonScript} />
       <SectionCard
-        title="Perguntas Avaliativas"
+        title="Instrumentos de Avaliação"
         content={plan.assessmentQuestions}
       />
     </section>
