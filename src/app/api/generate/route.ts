@@ -46,8 +46,10 @@ function buildRepairPrompt(topic: string): string {
   return [
     `Tema: ${topic}`,
     "",
-    "Retorne SOMENTE o objeto JSON, sem blocos de codigo (```) ou texto extra.",
-    "Cada campo deve ser string valida. Evite aspas duplas dentro dos textos; use apostrofos ou parenteses para citar termos.",
+    "Preencha os 6 campos: foundation, teacherContext, studentExplanation, commonMistakes, lessonScript, assessmentQuestions.",
+    "Nenhum campo vazio. Cada um dos 6 campos deve ter conteudo de pelo menos 1 caractere.",
+    "Retorne JSON puro, sem blocos de codigo (```) ou texto antes/depois.",
+    "Use apostrofo ou parenteses para citar termos, nunca aspas duplas dentro dos textos.",
   ].join("\n");
 }
 

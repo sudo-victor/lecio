@@ -36,6 +36,7 @@ lecio/
 
 ```bash
 ANTHROPIC_API_KEY=
+ANTHROPIC_MODEL=        # Opcional; padrão: claude-haiku-4-5
 DATABASE_URL=           # Neon pooled (runtime)
 DATABASE_URL_UNPOOLED=  # Neon direct (migrações drizzle-kit push)
 ```
@@ -153,6 +154,8 @@ Estilos base para mobile; breakpoints apenas para desktop.
 
 ## Claude API
 
+Modelo atual: **claude-haiku-4-5** (configurável via `ANTHROPIC_MODEL`).
+
 ### lib/claude.ts
 
 ```ts
@@ -177,7 +180,7 @@ FORMATO DE RESPOSTA OBRIGATÓRIO:
 ## 6. Perguntas Avaliativas
 `
 
-export const MODEL = 'claude-sonnet-4-6'
+export const MODEL = process.env.ANTHROPIC_MODEL ?? 'claude-haiku-4-5'
 export const MAX_TOKENS = 2048
 ```
 

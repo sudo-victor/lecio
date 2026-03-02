@@ -38,7 +38,7 @@ Professores enfrentam: falta de tempo para pesquisa, domínio parcial de todos o
 
 ## Arquitetura
 - **Frontend:** input único + botão Gerar + exibição das 6 seções + feedback binário; responsivo (mobile)
-- **Backend:** endpoint de API + prompt fixo + integração LLM (Claude ou GPT-4)
+- **Backend:** endpoint de API + prompt fixo + integração LLM (modelo atual: Claude Haiku 4.5)
 - **LLM:** system prompt estruturado e rígido; sem RAG na v1
 - **Dados:** log de interações (input, output, feedback) em SQLite ou Postgres
 

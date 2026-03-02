@@ -82,7 +82,7 @@ Componentes principais:
 - **UI Web (Next.js + Tailwind)**: coleta tema, exibe 6 seções e captura feedback útil/não útil.
 - **API `generate`**: valida input, aplica `SYSTEM_PROMPT` estruturado e retorna stream.
 - **API `feedback`**: recebe avaliação do usuário e persiste junto da interação.
-- **Camada de IA (`lib/claude`)**: centraliza modelo, tokens e contrato de prompt.
+- **Camada de IA (`lib/claude`)**: centraliza modelo (atual: `claude-haiku-4-5`), tokens e contrato de prompt.
 - **Camada de dados (Neon + Drizzle)**: armazena interações para análise qualitativa.
 
 ### Diagrama de Arquitetura
